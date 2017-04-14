@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Issue Tracker</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body onload="fetch_issues()">
+    <div class="container">
+      <h1>JS Issue Tracker <small>By Neloy Ahmed</small></h1>
+      <div class="jumbotron">
+        <h3>Add New Issue:</h3>
+        <form id="issue_input_form">
+          <div class="form-group">
+            <label for="issue_description_input">Description</label>
+            <input type="text" class="form-control" id="issue_description_input" placeholder="Describe the issue..." >
+          </div>
+
+          <div class="form-group">
+            <label for="issue_severity_input">Severity</label>
+            <select id="issue_severity_input" class="form-control">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="issue_assigned_to_input">Assigned To</label>
+            <input type="text" class="form-control" id="issue_assigned_to_input" placeholder="Enter Responsible..." >
+          </div>
+
+          <button type="submit" class="btn btn-primary" >Add</button>
+        </form>
+      </div>
+
+      <div class="col-lg-12">
+        <div id="issues_list">
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy Neloy Ahmed</p>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/chance.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js">
+
+    </script>
+  </body>
+</html>
